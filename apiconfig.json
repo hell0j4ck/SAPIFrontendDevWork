@@ -1,4 +1,5 @@
 {
 
-    "backend_ip":"https://sapi-api.ccedev.net"
+    "backend_ip":"https://sapi-api.ccedev.net",
+    "hostOriginHeader":"sapidev.ccedev.net"
 }
