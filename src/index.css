@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: rgb(192, 163, 255);
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+.main-container{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 50vh;
+  height: 100%;
+  
+  
+}
+
+.app-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: white;
+ 
+  padding: 1em;
+  margin: 3em;
+  border: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px;
+
+
+  max-width: 825px;
+  
+}
+
+
+
+h1{
+
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin: 2em
+}
+
+
+
+.title{
+
+  font-size: 12px;
+ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
