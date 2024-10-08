@@ -18,16 +18,14 @@ export async function getFile(format, url) {
     if (response.ok) {
 
         console.log("Success!")
-
-        const blob = await response.blob()
-        const url = URL.createObjectURL(blob)
+        const filePath = await response.text()
         const link = document.createElement('a')
-        link.href = url
+        link.href = `http://localhost:3002${filePath}`
+        link.target='_blank'
         document.body.appendChild(link);
         link.click()
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-        return blob
+        
+        return true
 
     } else {
 

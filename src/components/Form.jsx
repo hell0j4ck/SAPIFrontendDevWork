@@ -39,16 +39,19 @@ export default function Form() {
             const url = data.get('url')
             const format = data.get('format')
 
-            const blob = await getFile(format, url).catch((err) => {
+            const blob = await getFile(format, url).then(()=>{
+
+                setIsSubmitting(false)
+                setValue('')
+
+            }).catch((err) => {
 
                 setIsSubmitting(false)
                 setError('Error connecting to server...')
 
             })
 
-            console.log(blob)
-
-            return blob
+          
         }
 
 
