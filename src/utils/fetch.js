@@ -20,7 +20,7 @@ export async function getFile(format, url) {
         console.log("Success!")
         const filePath = await response.text()
         const link = document.createElement('a')
-        link.href = `http://localhost:3002${filePath}`
+        link.href = `${backend_ip}${filePath}`
         link.target='_blank'
         document.body.appendChild(link);
         link.click()
